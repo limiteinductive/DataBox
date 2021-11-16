@@ -1,8 +1,12 @@
-# Project name here
-> Summary description here.
+# DataBox
+> A user friendly API to jump-start your Deep Learning project. 
 
 
-This file will become your README and also the index of your documentation.
+The library is still in early development, but a lot of new features will be added in future
+
+    [] Support for non-image Datasets
+    [] Import NN architecture from the timm library
+    [] ...
 
 ## Install
 
@@ -10,7 +14,7 @@ This file will become your README and also the index of your documentation.
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+Let's go through a very basic example:
 
 ```
 1+1

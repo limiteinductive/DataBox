@@ -1,6 +1,7 @@
 {
   "databox": {
     "Overview": "/",
-    "module name here": "core.html"
+    "Core": "core.html",
+    "Utils": "utils.html"
   }
 }
