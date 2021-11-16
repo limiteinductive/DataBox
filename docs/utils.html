@@ -34,7 +34,7 @@ nb_path: "utils.ipynb"
 <hr>
 <p>Simplify</p>
 <p><code>a simple function to do some simple tasks.</code></p>
-<p>If you give an iterable with a single element, then you'll get just that element (denesting). Works
+<p>If you give an iterable with a single element, then you'll get just that element. Works
 also for function that has default arguments.</p>
 
 </div>
@@ -43,57 +43,6 @@ also for function that has default arguments.</p>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@dispatch</span>
-<span class="k">def</span> <span class="nf">simplify</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span>
-
-<span class="nd">@dispatch</span>
-<span class="k">def</span> <span class="nf">simplify</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">function</span><span class="p">):</span> 
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fn</span><span class="p">()</span>
-    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fn</span>
-
-<span class="nd">@dispatch</span>
-<span class="k">def</span> <span class="nf">simplify</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">):</span> <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="fm">__iter__</span><span class="p">())</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">i</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Examples">Examples<a class="anchor-link" href="#Examples"> </a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>``` with a dict:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simplify</span><span class="p">({</span><span class="mi">2</span><span class="p">})</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -101,51 +50,11 @@ also for function that has default arguments.</p>
 <div class="output_area">
 
 
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>with function:</p>
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="simplify" class="doc_header"><code>simplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify</code>(<strong><code>x</code></strong>)</p>
 </blockquote>
 
 </div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">simplify</span><span class="p">)(</span><span class="k">lambda</span> <span class="n">x</span><span class="o">=-</span><span class="mi">1</span><span class="p">:</span> <span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>-1</pre>
-</div>
 
 </div>
 
@@ -155,13 +64,13 @@ also for function that has default arguments.</p>
 </div>
     {% endraw %}
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>```</p>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 </div>
-</div>
-</div>
+    {% endraw %}
+
 </div>
  
 

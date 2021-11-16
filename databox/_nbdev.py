@@ -2,9 +2,12 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"DataBox": "core.ipynb"}
+index = {"DataBox": "core.ipynb",
+         "function": "utils.ipynb",
+         "simplify": "utils.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "utils.py"]
 
 doc_url = "//"
 
