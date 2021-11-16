@@ -59,8 +59,6 @@ defaults:
 sidebars:
 - home_sidebar
 
-plugins:
-    - jekyll-remote-theme
-    
-remote_theme: fastai/nbdev-jekyll-theme
+theme: just-the-docs
+
 baseurl: /
