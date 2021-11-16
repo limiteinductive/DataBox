@@ -60,5 +60,6 @@ sidebars:
 - home_sidebar
 
 theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 baseurl: /
