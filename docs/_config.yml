@@ -59,8 +59,8 @@ defaults:
 sidebars:
 - home_sidebar
 
-remote_theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 theme: just-the-docs
 
 url: limiteinductive.github.io/
-baseurl: /DataBox
+baseurl: /
