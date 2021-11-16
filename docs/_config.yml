@@ -62,6 +62,11 @@ sidebars:
 remote_theme: pmarsceill/just-the-docs
 theme: just-the-docs
 
+# Aux links for the upper right navigation
+aux_links:
+  "DataBox on GitHub":
+    - "https://github.com/limiteinductive/DataBox/"
+
 
 #url: limiteinductive.github.io/
 #baseurl: /
