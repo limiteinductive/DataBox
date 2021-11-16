@@ -1,4 +1,4 @@
-repository: limiteinductive/DataBox
+title: DataBox API documentation
 output: web
 topnav_title: databox
 site_title: databox
@@ -59,7 +59,7 @@ defaults:
 sidebars:
 - home_sidebar
 
-remote_theme: "just-the-docs"
-theme: "just-the-docs"
+remote_theme: just-the-docs
+theme: just-the-docs
 
 baseurl: /
