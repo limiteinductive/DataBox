@@ -63,5 +63,5 @@ remote_theme: pmarsceill/just-the-docs
 theme: just-the-docs
 
 
-url: limiteinductive.github.io/
-baseurl: /
+#url: limiteinductive.github.io/
+#baseurl: /
