@@ -1,4 +1,4 @@
-title: DataBox API documentation
+title: DataBox
 output: web
 topnav_title: databox
 site_title: databox
@@ -61,6 +61,7 @@ sidebars:
 
 remote_theme: pmarsceill/just-the-docs
 theme: just-the-docs
+
 
 url: limiteinductive.github.io/
 baseurl: /
