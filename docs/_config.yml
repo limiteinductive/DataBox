@@ -60,7 +60,7 @@ sidebars:
 - home_sidebar
 
 remote_theme: just-the-docs
-theme: jekyll-theme-cayman
+theme: just-the-docs
 
 url: limiteinductive.github.io/
 baseurl: /DataBox
