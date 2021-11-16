@@ -6,7 +6,7 @@ index = {}
 
 modules = []
 
-doc_url = "https://limiteinductive.github.io/DataBox//"
+doc_url = "//"
 
 git_url = "https://github.com/limiteinductive/Databox/tree/main/"
 
