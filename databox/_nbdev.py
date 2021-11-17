@@ -4,7 +4,13 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"DataBox": "core.ipynb",
          "function": "utils.ipynb",
-         "simplify": "utils.ipynb"}
+         "T": "utils.ipynb",
+         "identity": "utils.ipynb",
+         "simplify": "utils.ipynb",
+         "listify": "utils.ipynb",
+         "setify": "utils.ipynb",
+         "tuplify": "utils.ipynb",
+         "get_files": "utils.ipynb"}
 
 modules = ["core.py",
            "utils.py"]

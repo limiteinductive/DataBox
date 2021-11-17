@@ -31,12 +31,7 @@ nb_path: "utils.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p>Simplify</p>
-<p><code>a simple function to do some simple tasks.</code></p>
-<p>If you give an iterable with a single element, then you'll get just that element. Works
-also for function that has default arguments.</p>
-
+<h2 id="Basics">Basics<a class="anchor-link" href="#Basics"> </a></h2>
 </div>
 </div>
 </div>
@@ -51,8 +46,400 @@ also for function that has default arguments.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="simplify" class="doc_header"><code>simplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify</code>(<strong><code>x</code></strong>)</p>
+<h4 id="identity" class="doc_header"><code>identity</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>identity</code>(<strong><code>x</code></strong>:<a href="/utils.html#T"><code>T</code></a>)</p>
 </blockquote>
+<p>Indentity function.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="simplify" class="doc_header"><code>simplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify</code>(<strong><code>x</code></strong>)</p>
+</blockquote>
+<p>Return an object of an iterable if it is lonely.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The simplify function is used to de-nest an iterable with a single element in it, as for instance [1], while leaving everything else constant. It can also exchange a function for its default argument.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simplify</span><span class="p">({</span><span class="mi">1</span><span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">simplify</span><span class="p">)(</span><span class="k">lambda</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;lul&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;omegalul&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="listify" class="doc_header"><code>listify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>listify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+</blockquote>
+<p>Convert <code>x</code> to a <code>list</code>.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What's very convenient is that it leaves lists invariant (it doen't nest them into a new list).</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listify</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listify</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="setify" class="doc_header"><code>setify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L59" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+</blockquote>
+<p>Convert <code>x</code> to a <code>set</code>.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">setify</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{1, 2, 3}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="tuplify" class="doc_header"><code>tuplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L65" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>tuplify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+</blockquote>
+<p>Convert <code>x</code> to a <code>tuple</code>.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tuplify</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(1,)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="File-manipulation-helper">File manipulation helper<a class="anchor-link" href="#File-manipulation-helper"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="get_files" class="doc_header"><code>get_files</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L71" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_files</code>(<strong><code>path</code></strong>, <strong><code>extensions</code></strong>=<em><code>None</code></em>, <strong><code>recurse</code></strong>=<em><code>False</code></em>, <strong><code>folders</code></strong>=<em><code>None</code></em>, <strong><code>followlinks</code></strong>=<em><code>True</code></em>)</p>
+</blockquote>
+<p>Get all the files in <code>path</code>.</p>
+<p>With optional <code>extensions</code> selection, optionally with <code>recurse</code>, only in <code>folders</code>, if specified.</p>
+<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>path: path-like
+    indicates the place to search for files.
+extensions: str, list-like, optional
+    if specified, return only files with specified <code>extensions</code>.
+recurse: bool, default=True
+    if set to True, return files also present in subfolders recursively.
+folders: path-like, list-like, optional
+    if specified, return only files within <code>folders</code>.
+followlinks: bool, default=True
+    if set to True, will</p>
+<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>list-like
+    collection of filenames present at <code>path</code> with <code>extensions</code>.</p>
 
 </div>
 

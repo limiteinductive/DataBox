@@ -59,8 +59,10 @@ defaults:
 sidebars:
 - home_sidebar
 
-remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs
+plugins:
+    - jekyll-remote-theme
+    
+remote_theme: fastai/nbdev-jekyll-theme
 
 # Aux links for the upper right navigation
 aux_links:
