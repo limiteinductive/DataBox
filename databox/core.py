@@ -4,4 +4,13 @@ __all__ = ['DataBox']
 
 # Cell
 class DataBox:
-    pass
+
+    def __init__(self, block, getter, *tfms):
+
+        self.block = tuplify(block)
+        self.getter = getter
+        self.tfms = tfms
+
+
+    def __add__(self, other):
+        pass

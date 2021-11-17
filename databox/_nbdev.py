@@ -10,7 +10,11 @@ index = {"DataBox": "core.ipynb",
          "listify": "utils.ipynb",
          "setify": "utils.ipynb",
          "tuplify": "utils.ipynb",
-         "get_files": "utils.ipynb"}
+         "compose": "utils.ipynb",
+         "pipe": "utils.ipynb",
+         "flow": "utils.ipynb",
+         "get_files": "utils.ipynb",
+         "save_dataset": "utils.ipynb"}
 
 modules = ["core.py",
            "utils.py"]
