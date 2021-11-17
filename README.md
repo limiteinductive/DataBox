@@ -15,14 +15,3 @@ The library is still in early development, but a lot of new features will be add
 ## How to use
 
 Let's go through a very basic example:
-
-```
-1+1
-```
-
-
-
-
-    2
-
-
