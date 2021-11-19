@@ -23,6 +23,6 @@ def image_box(size = 224, folder = '', aug_kwargs = None, **kwargs):
     )
 
 # Cell
-def cat_box():
+def cat_box(suffix=''):
     """Make a Category Box from the categorial array of the dataset."""
-    return DataBox(MultiCategoryBlock, get_array('.cat'))
+    return DataBox(MultiCategoryBlock, get_array(suffix))

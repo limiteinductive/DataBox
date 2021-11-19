@@ -18,7 +18,7 @@ index = {"image_box": "box.ipynb",
          "pipe": "utils.ipynb",
          "flow": "utils.ipynb",
          "get_files": "utils.ipynb",
-         "save_dataset": "utils.ipynb"}
+         "save_array": "utils.ipynb"}
 
 modules = ["box.py",
            "core.py",
