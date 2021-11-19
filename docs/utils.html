@@ -29,6 +29,13 @@ nb_path: "utils.ipynb"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Basics">Basics<a class="anchor-link" href="#Basics"> </a></h2>
@@ -46,7 +53,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="identity" class="doc_header"><code>identity</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L20" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>identity</code>(<strong><code>x</code></strong>:<a href="/utils.html#T"><code>T</code></a>)</p>
+<h4 id="identity" class="doc_header"><code>identity</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L19" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>identity</code>(<strong><code>x</code></strong>:<a href="/utils.html#T"><code>T</code></a>)</p>
 </blockquote>
 <p>Indentity function.</p>
 
@@ -78,7 +85,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="simplify" class="doc_header"><code>simplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L26" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify</code>(<strong><code>x</code></strong>)</p>
+<h4 id="simplify" class="doc_header"><code>simplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify</code>(<strong><code>x</code></strong>)</p>
 </blockquote>
 <p>Return an object of an iterable if it is lonely.</p>
 
@@ -183,7 +190,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="listify" class="doc_header"><code>listify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L45" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>listify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+<h4 id="listify" class="doc_header"><code>listify</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L44" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>listify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
 </blockquote>
 <p>Convert <code>x</code> to a <code>list</code>.</p>
 
@@ -288,7 +295,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="setify" class="doc_header"><code>setify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L63" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+<h4 id="setify" class="doc_header"><code>setify</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L62" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
 </blockquote>
 <p>Convert <code>x</code> to a <code>set</code>.</p>
 
@@ -353,7 +360,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="tuplify" class="doc_header"><code>tuplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L69" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>tuplify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
+<h4 id="tuplify" class="doc_header"><code>tuplify</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L68" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>tuplify</code>(<strong><code>x</code></strong>, <strong>*<code>args</code></strong>)</p>
 </blockquote>
 <p>Convert <code>x</code> to a <code>tuple</code>.</p>
 
@@ -418,7 +425,75 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="compose" class="doc_header"><code>compose</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L75" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compose</code>(<strong>*<code>functions</code></strong>)</p>
+<h4 id="merge_tfms" class="doc_header"><code>merge_tfms</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L74" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>merge_tfms</code>(<strong>*<code>tfms</code></strong>)</p>
+</blockquote>
+<p>Merge two dictionnaries by stacking common key into list.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">merge_tfms</span><span class="p">(</span>
+    <span class="p">{</span><span class="s1">&#39;animals&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">],</span> <span class="s1">&#39;colors&#39;</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">},</span> 
+    <span class="p">{</span><span class="s1">&#39;animals&#39;</span><span class="p">:</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;colors&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;OS&#39;</span><span class="p">:</span> <span class="s1">&#39;i use arch btw&#39;</span><span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;animals&#39;: [&#39;cats&#39;, &#39;dog&#39;], &#39;colors&#39;: [&#39;red&#39;, &#39;blue&#39;], &#39;OS&#39;: &#39;i use arch btw&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="compose" class="doc_header"><code>compose</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L86" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compose</code>(<strong>*<code>functions</code></strong>)</p>
 </blockquote>
 <p>Compose an arbitrary number of functions.</p>
 
@@ -450,7 +525,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="pipe" class="doc_header"><code>pipe</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L84" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>pipe</code>(<strong>*<code>functions</code></strong>)</p>
+<h4 id="pipe" class="doc_header"><code>pipe</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L95" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>pipe</code>(<strong>*<code>functions</code></strong>)</p>
 </blockquote>
 <p>Pipe an arbitrary number of functions.</p>
 
@@ -482,7 +557,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="flow" class="doc_header"><code>flow</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L90" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>flow</code>(<strong><code>data</code></strong>, <strong>*<code>functions</code></strong>)</p>
+<h4 id="flow" class="doc_header"><code>flow</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>flow</code>(<strong><code>data</code></strong>, <strong>*<code>functions</code></strong>)</p>
 </blockquote>
 <p>Flow <code>data</code> through a list of functions.</p>
 
@@ -520,7 +595,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_files" class="doc_header"><code>get_files</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L96" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_files</code>(<strong><code>path</code></strong>, <strong><code>extensions</code></strong>=<em><code>None</code></em>, <strong><code>recurse</code></strong>=<em><code>False</code></em>, <strong><code>folders</code></strong>=<em><code>None</code></em>, <strong><code>followlinks</code></strong>=<em><code>True</code></em>)</p>
+<h4 id="get_files" class="doc_header"><code>get_files</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L107" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_files</code>(<strong><code>path</code></strong>, <strong><code>extensions</code></strong>=<em><code>None</code></em>, <strong><code>recurse</code></strong>=<em><code>False</code></em>, <strong><code>folders</code></strong>=<em><code>None</code></em>, <strong><code>followlinks</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
 <p>Get all those file names.</p>
 
@@ -544,6 +619,49 @@ nb_path: "utils.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_array</span><span class="p">(</span><span class="n">suffix</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a getter that loads a numpy array with given suffix.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s1">.npy&#39;</span><span class="p">),</span> <span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">save_array</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">suffix</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Save an array with the given name and suffix.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">suffix</span><span class="o">.</span><span class="n">startwith</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">):</span>
+        <span class="n">suffix</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">suffix</span>
+
+    <span class="n">fname</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">fname</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="n">suffix</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -552,7 +670,7 @@ nb_path: "utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="save_dataset" class="doc_header"><code>save_dataset</code><a href="https://github.com/limiteinductive/Databox/tree/main/databox/utils.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>save_dataset</code>(<strong><code>data</code></strong>)</p>
+<h4 id="save_dataset" class="doc_header"><code>save_dataset</code><a href="https://github.com/limiteinductive/Databox/tree/main/lazybox/utils.py#L140" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>save_dataset</code>(<strong><code>data</code></strong>)</p>
 </blockquote>
 
 </div>

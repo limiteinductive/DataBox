@@ -1,6 +1,7 @@
 {
-  "databox": {
+  "lazybox": {
     "Overview": "/",
+    "Boxes": "box.html",
     "Core": "core.html",
     "Utils": "utils.html"
   }

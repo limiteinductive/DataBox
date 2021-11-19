@@ -2,7 +2,10 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"DataBox": "core.ipynb",
+index = {"image_box": "box.ipynb",
+         "cat_box": "box.ipynb",
+         "DataBox": "core.ipynb",
+         "create_datablock": "core.ipynb",
          "function": "utils.ipynb",
          "T": "utils.ipynb",
          "identity": "utils.ipynb",
@@ -10,13 +13,15 @@ index = {"DataBox": "core.ipynb",
          "listify": "utils.ipynb",
          "setify": "utils.ipynb",
          "tuplify": "utils.ipynb",
+         "merge_tfms": "utils.ipynb",
          "compose": "utils.ipynb",
          "pipe": "utils.ipynb",
          "flow": "utils.ipynb",
          "get_files": "utils.ipynb",
          "save_dataset": "utils.ipynb"}
 
-modules = ["core.py",
+modules = ["box.py",
+           "core.py",
            "utils.py"]
 
 doc_url = "//"
