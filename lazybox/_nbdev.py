@@ -3,9 +3,13 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"image_box": "box.ipynb",
+         "get_array": "box.ipynb",
          "cat_box": "box.ipynb",
+         "mcat_box": "box.ipynb",
+         "bbox_box": "box.ipynb",
          "DataBox": "core.ipynb",
          "create_datablock": "core.ipynb",
+         "set_seed": "core.ipynb",
          "function": "utils.ipynb",
          "T": "utils.ipynb",
          "identity": "utils.ipynb",

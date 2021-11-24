@@ -25,15 +25,15 @@ def identity(x: T) -> T:
 def simplify(x):
     """Return an object of an iterable if it is lonely."""
 
-    @dispatch
-    def _simplify(x): return x
 
     @dispatch
-    def _simplify(fn: function):
-        try:
-            return fn()
-        except TypeError:
-            return fn
+    def _simplify(x):
+        if callable(x):
+            try:
+                return x()
+            except TypeError:
+                pass
+        return x
 
     @dispatch
     def _simplify(i: Iterable): return next(i.__iter__()) if len(i) == 1 else i
