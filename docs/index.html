@@ -1,13 +1,13 @@
 ---
 
-title: DataBox
+title: LazyBox
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "A user friendly API to jump-start your Deep Learning project. "
-description: "A user friendly API to jump-start your Deep Learning project. "
+summary: "A user friendly API to jump-start your Deep Learning project based on Fastai. "
+description: "A user friendly API to jump-start your Deep Learning project based on Fastai. "
 nb_path: "index.ipynb"
 ---
 <!--
@@ -61,11 +61,35 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's go through a very basic example:</p>
+<p>Let's go through a typical workflow for a DeepLearning task. Let's take a Dataset on Kaggle: <a href="https://www.kaggle.com/tongpython/cat-and-dog">https://www.kaggle.com/tongpython/cat-and-dog</a> which are images of cat and dogs so we can train a classifier to predict the species</p>
 
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">lazybox.all</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="n">dls</span> <span class="o">=</span> <span class="n">create_dataloaders</span><span class="p">(</span>
+    <span class="n">input_box</span><span class="o">=</span><span class="n">image_box</span><span class="p">,</span>
+    <span class="n">output_box</span><span class="o">=</span><span class="n">bbox_box</span><span class="p">,</span>
+    <span class="n">path</span><span class="o">=</span><span class="s1">&#39;cat_dataset&#39;</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

@@ -137,6 +137,18 @@ def get_files(path, extensions=None, recurse=False, folders=None, followlinks=Tr
     return list(map(str, result))
 
 # Cell
+from fastcore.all import *
+
+@patch
+def decompress(self: Path, dest='.'):
+    pass
+
+# Cell
+@patch
+def compress(self: Path, dest='.', keep_copy=True):
+    pass
+
+# Cell
 def save_array(array, fname, suffix):
     """Save an array with the given name and suffix."""
     if not suffix.startswith("."):
