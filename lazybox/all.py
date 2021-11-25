@@ -11,3 +11,4 @@ from pandas import read_csv
 
 
 from fastai.vision.all import *
+from .core import set_seed

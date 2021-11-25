@@ -59,7 +59,7 @@ def create_datablock(input_box, output_box, **kwargs):
 
 
 # Cell
-def set_seed(dls,x=0):
+def set_seed(dls, x=0):
     """Set a random seed for all aspects of a Fastai Learner."""
     random.seed(x)
     dls.rng.seed(x)

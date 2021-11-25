@@ -33,9 +33,11 @@ def cat_box(suffix=''):
     return DataBox(CategoryBlock, pipe(get_array(suffix), str))
 
 # Cell
+from ast import literal_eval
+
 def mcat_box(suffix=''):
     """Make a Category Box from the categorial array of the dataset."""
-    return DataBox(MultiCategoryBlock, get_array(suffix))
+    return DataBox(MultiCategoryBlock, lambda x: literal_eval(get_array(suffix)(x).tolist()))
 
 # Cell
 def bbox_box():
